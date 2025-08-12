@@ -21,3 +21,5 @@ And when it is gone I will pan the inner map over to see its path
 When the meta is gone there will be balance
 
 Only roleplay will remain
+
+kill john lennon
