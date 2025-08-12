@@ -1,0 +1,39 @@
+state={
+	id=1106
+	name="STATE_1106"
+	manpower = 1127010
+	state_category = city
+	resources={
+		tungsten = 2
+	}
+
+	history={
+		owner = GXC
+		add_core_of = GXC
+		add_core_of = CHI
+		add_core_of = PRC
+        add_claim_by = AOG
+		
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 3
+			1047 = {
+				naval_base = 5
+				coastal_bunker = 1
+				bunker = 1
+			}
+
+		}
+		victory_points = {
+			1047 10
+		}
+	}
+
+	provinces={
+		1047
+	}
+
+	local_supplies=1.0 
+}

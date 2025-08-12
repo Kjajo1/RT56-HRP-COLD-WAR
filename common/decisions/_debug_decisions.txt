@@ -1,0 +1,22 @@
+# debug_decisions = {
+# 	debug_core_all = {
+
+# 		available = { 
+# 			always = yes
+# 		}
+
+# 		allowed = {
+# 			always = yes
+# 		}
+
+# 		visible = { 
+# 			is_debug = yes
+# 		}
+
+# 		complete_effect = {
+# 			every_state = {
+# 				add_core_of = ROOT
+# 			}
+# 		}
+# 	}
+# }

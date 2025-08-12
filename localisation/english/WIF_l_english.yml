@@ -1,0 +1,29 @@
+﻿l_english:
+ r56_wif:0 "West Indies Federation National Focus"
+
+ #focus
+ WIF_Colonial_Administration:0 "British Colonial Administration"
+ WIF_Colonial_Administration_desc:0 ""
+
+ WIF_Integrate_Locals:0 "Integrate the Locals"
+ WIF_Integrate_Locals_desc:0 ""
+
+ WIF_Expand_Holdings:0 "Expand British Holdings"
+ WIF_Expand_Holdings_desc:0 "In the name of the crown, we shall rule the Caribbean!"
+
+ WIF_Develop_Our_Lands:0 "Develop our Lands"
+ WIF_Develop_Our_Lands_desc:0 ""
+
+ WIF_Industrialize_Holdings:0 "Industralize the Holdings"
+ WIF_Industrialize_Holdings_desc:0 ""
+
+ WIF_Acquire_USA_Planes:0 "Acquire American Planes"
+ WIF_Acquire_USA_Planes_desc:0 ""
+
+ WIF_Integrate_New_Holdings:0 "Integrate our New Holdings"
+ WIF_Integrate_New_Holdings_desc:0 "And I declare you, British!"
+
+ WIF_Final_Battle:0 "The Final Battle"
+ WIF_Final_Battle_desc:0 ""
+
+ WIF_Michael_Barker:0 "Michael Barker"

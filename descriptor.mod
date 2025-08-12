@@ -1,0 +1,15 @@
+version="Demo"
+tags={
+	"Alternative History"
+	"National Focuses"
+	"Technologies"
+	"Map"
+	"Gameplay"
+	"Events"
+	"Ideologies"
+	"Military"
+}
+name="HRP Cold War"
+replace_path="history/states"
+replace_path="map/strategicregions"
+supported_version="1.16.9"

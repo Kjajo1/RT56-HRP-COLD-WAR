@@ -1,0 +1,23 @@
+political_actions = {
+    PAN_Switch_To_Ukraine = {
+        
+        icon = GFX_decision_oppression
+        
+        allowed = {  
+			original_tag = PAN
+		}
+
+        available = {
+			UKR = { exists = yes }
+            NOT = {
+                is_ai = yes
+            }
+		}
+
+        complete_effect = {
+            UKR = {
+                change_tag_from = PAN
+            }
+        }
+    }
+}

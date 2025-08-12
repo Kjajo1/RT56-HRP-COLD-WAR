@@ -1,0 +1,69 @@
+political_actions = {
+    IRE_debug_0001 = {
+		
+		icon = generic_nationalism
+		
+		allowed = {
+			original_tag = IRE
+		}
+
+		visible = {
+			NOT = { has_country_flag = IRE_debug_0001_completed }
+		}
+		
+		available = {
+			original_tag = IRE
+		}
+
+		cost = 1
+
+		#days_remove = 120
+
+		#cancel_if_not_visible = yes
+		
+		complete_effect = {
+			load_focus_tree = wuw_hungarian_focus
+			set_country_flag = IRE_debug_0001_completed
+		}
+
+		#remove_effect = {
+		#	load_focus_tree = ireland_focus
+		#}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	IRE_debug_0002 = {
+		
+		icon = generic_nationalism
+		
+		allowed = {
+			original_tag = IRE
+		}
+
+		visible = {
+			NOT = { has_country_flag = IRE_debug_0002_completed }
+		}
+		
+		available = {
+			original_tag = IRE
+		}
+
+		cost = 1
+
+		#days_remove = 120
+
+		#cancel_if_not_visible = yes
+		
+		complete_effect = {
+            load_focus_tree = ireland_focus
+			set_country_flag = IRE_debug_0002_completed
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

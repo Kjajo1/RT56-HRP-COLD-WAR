@@ -1,0 +1,44 @@
+characters = {
+	BYA_bidia_dandaron = {
+		name = BYA_bidia_dandaron
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BYA/r56_portrait_BYA_Bidia_Dandaron.dds"
+			}
+		}
+		country_leader = {
+			ideology = monarchical_theocracy
+			expire = "1960.1.1.1"
+			id = -1
+			traits = {
+				religious_figure
+			}
+		}
+	}
+	BYA_Naruhiko_Higashikuni = {
+		name = BYA_Naruhiko_Higashikuni
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BYA/r56_portrait_BYA_Naruhiko_Higashikuni.dds"
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+	BYA_Khenbish = {
+		name = BYA_Khenbish
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BYA/r56_portrait_BYA_Khenbish.dds"
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+	}
+}

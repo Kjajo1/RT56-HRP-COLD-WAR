@@ -1,0 +1,24 @@
+ideas = {
+    country = {
+        ORG_CoN = {
+
+			picture = Commonwealth
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				offensive_war_stability_factor = -0.1
+                defensive_war_stability_factor = 0.1
+                democratic_drift = 0.03
+			}
+		}
+    }
+}

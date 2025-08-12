@@ -1,0 +1,76 @@
+﻿capital = 691
+
+set_oob = "WIF_1936"
+
+# Starting tech
+set_technology = {
+
+	# Extended Technologies
+	etax_doctrine = 1
+	camo = 1
+
+	steel_production_1 = 1
+	aluminum_production_1 = 1
+
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	#improved_light_tank = 1  # PLACEHOLDER
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	trench_warfare = 1
+
+	transport = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	marines = 1
+	basic_train = 1
+}
+
+recruit_character = WIF_defensive_leader
+recruit_character = WIF_Anton_Allister
+recruit_character = WIF_William_Afton
+recruit_character = WIF_James_Evans
+recruit_character = WIF_infantry_guy
+
+give_guarantee = USA
+
+set_convoys = 76
+set_research_slots = 3
+add_to_tech_sharing_group = commonwealth_research
+
+add_ideas = {
+	USA_monroe_doctrine_idea
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 28
+	fascism = 2
+	communism = 14
+	neutrality = 56
+}
+
+create_country_leader = {
+	name = "Sir Wilfrid Edward Francis Jackson"
+	desc = "Leader of the West Indies Federation"
+	picture = "gfx/leaders/WIF/Portrait_WIF.dds"
+	ideology = moderatism
+}

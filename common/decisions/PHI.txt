@@ -1,0 +1,89 @@
+political_actions = {
+    PHI_debug_0001 = {
+		
+		icon = GFX_decision_faction_bul_zveno
+		
+		allowed = {
+			original_tag = PHI
+		}
+
+		visible = {
+			NOT = { has_country_flag = PHI_debug_0001_completed }
+		}
+		
+		available = {
+			original_tag = PHI
+		}
+
+		cost = 0
+		
+		complete_effect = {
+			load_focus_tree = wuw_hungarian_focus
+			set_country_flag = PHI_debug_0001_completed
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	PHI_debug_0002 = {
+		
+		icon = GFX_decision_faction_bul_zveno
+		
+		allowed = {
+			original_tag = PHI
+		}
+
+		visible = {
+			NOT = { has_country_flag = PHI_debug_0002_completed }
+		}
+		
+		available = {
+			original_tag = PHI
+		}
+
+		cost = 0
+		
+		complete_effect = {
+            load_focus_tree = philippines_focus
+			set_country_flag = PHI_debug_0002_completed
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+    PHI_debug_McArthur = {
+        icon = GFX_decision_generic_USA_flag
+
+        allowed = {
+			original_tag = PHI
+		}
+
+		visible = {
+			NOT = { has_country_flag = PHI_debug_McArthur_completed }
+		}
+		
+		available = {
+			original_tag = PHI
+		}
+
+        complete_effect = {
+            retire_country_leader = yes
+			create_country_leader = {
+				name = "Douglas MacArthur"
+				# desc = "POLITICS_WILHELM_MARSCHALL_DESC"
+				picture = "gfx/leaders/USA/Portrait_USA_Douglas_MacArthur.dds"
+				expire = "1965.1.1"
+				ideology = moderatism
+			}
+			set_party_name = { 
+				ideology = neutrality
+				long_name = "United States Regional Authority" 
+				name = "USN Overseen Democracy"
+			}
+        }
+    }
+}

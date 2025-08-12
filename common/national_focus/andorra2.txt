@@ -1,0 +1,270 @@
+focus_tree = {
+    id = andorra_alt_focus
+
+    country = {
+		factor = 0
+		modifier = {
+			add = 30
+			original_tag = ADR
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+
+	continuous_focus_position = { x = 0 y = 1000 }
+
+	########################
+	###Industrial Focuses###
+	########################
+
+	shared_focus = ABC_establish_a_general_staff
+    shared_focus = GEN_Aviation_Effort
+    shared_focus = GEN_Naval_Effort
+    shared_focus = GEN_begin_industrial_buildup
+    shared_focus = GEN_State_Matter
+    shared_focus = GEN_industrial_boom
+
+    focus = {
+        id = ADR_Principality_of_Andorra
+		icon = GFX_focus_generic_monarchy_2
+		x = 56
+		y = 0
+		cost = 5
+
+        available = {
+			ADR = { has_government = neutrality}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_political_power = 50
+            capital_scope = {
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+            }
+		}
+    }
+    focus = {
+        id = ADR_Encourage_Tourism
+		icon = GFX_focus_generic_monetary_union
+        prerequisite = { focus =  ADR_Principality_of_Andorra}
+        relative_position_id = ADR_Principality_of_Andorra
+		x = 0
+		y = 1
+		cost = 5
+
+        available = {
+			ADR = { has_government = neutrality}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_political_power = 100
+			add_ideas = MNC_principality_for_everyone
+		}
+    }
+    focus = {
+        id = ADR_Unfinished_Tree
+		icon = GFX_goal_unknown
+        prerequisite = { focus =  ADR_Encourage_Tourism}
+        relative_position_id = ADR_Principality_of_Andorra
+		x = 0
+		y = 2
+		cost = 5
+
+        available = {
+			
+		}
+
+		cost = 5
+
+		completion_reward = {
+			
+		}
+    }
+    
+    # Spanish Civil War Tree
+    
+    focus = {
+		id = ADR_Spanish_Civil_war
+		icon = GFX_focus_spr_no_pasaran
+		x = 56
+		y = 6
+		cost = 5
+		available = {
+			owns_state = 973
+            SPR_scw_in_progress = yes
+	    }
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			add_war_support = 0.1
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
+	}
+    focus = {
+		id = ADR_Prepare_Worst
+		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+        prerequisite = { focus =  ADR_Spanish_Civil_war}
+		relative_position_id = ADR_Spanish_Civil_war
+		x = -1
+		y = 1
+		cost = 5
+		available = {
+			owns_state = 973
+	    }
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			division_template = {
+					name = "Andorran Elite Guard"
+					division_names_group = ENG_INF_1
+					is_locked = yes
+					force_allow_recruiting = yes
+					override_model = GER_infantry_alt_0_entity
+					division_cap = 12
+
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "division_template = \"Andorran Elite Guard\" start_experience_factor = 1 start_equipment_factor = 1.0"
+						owner = ROOT
+						count = 3
+					}
+				}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
+	    }
+    }
+    focus = {
+		id = ADR_economic_mobilization2
+		icon = GFX_focus_generic_reorient_production
+		prerequisite = { focus = ADR_Spanish_Civil_war }
+        relative_position_id = ADR_Spanish_Civil_war
+
+		x = 1
+		y = 1
+		cost = 10
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			add_war_support = 0.1
+			upgrade_economy_law = yes
+		}
+	}
+    focus = {
+		id = ADR_forceful_conscription
+		icon = GFX_focus_RAJ_contamination_cleanup_crew
+		prerequisite = { focus = ADR_Prepare_Worst }
+        relative_position_id = ADR_Spanish_Civil_war
+
+		x = -1
+		y = 2
+		cost = 10
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+            add_stability = -0.25
+            add_war_support = -0.10
+			capital_scope = {
+				create_unit = {
+					division = "division_template = \"Andorran Elite Guard\" start_experience_factor = 1 start_equipment_factor = 1.0"
+					owner = ROOT
+					count = 4
+				}
+			}
+		}
+	}
+    focus = {
+		id = ADR_exploit_population
+		icon = GFX_focus_IRQ_attempted_assasination_of_sidqi
+		prerequisite = { focus = ADR_economic_mobilization2 }
+        relative_position_id = ADR_Spanish_Civil_war
+
+		x = 1
+		y = 2
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+            add_stability = -0.10
+            add_war_support = -0.05
+			capital_scope = {
+                add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+    focus = {
+		id = ADR_Intervene_Against_Aragon
+		icon = GFX_focus_focus_fra_intervention_spain
+		prerequisite = { focus = ADR_exploit_population focus = ADR_forceful_conscription}
+        relative_position_id = ADR_Spanish_Civil_war
+
+		x = 0
+		y = 3
+		cost = 5
+
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+            add_state_claim = 165
+			create_wargoal = {
+				type = take_claimed_state
+				target = SPC
+				generator = { 165 }
+			}
+		}
+	}
+    focus = {
+		id = ADR_Unfinished_Content
+		icon = GFX_focus_spr_maintain_the_republic
+		prerequisite = { focus = ADR_Intervene_Against_Aragon}
+        relative_position_id = ADR_Spanish_Civil_war
+
+		x = 0
+		y = 4
+		cost = 5
+
+		available = {
+            owns_state = 165
+        }
+
+		completion_reward = {
+            set_cosmetic_tag = CAT_aragon_neutrality
+			add_state_core = 165
+            add_state_core = 794
+            add_state_core = 167
+		}
+	}
+}

@@ -1,0 +1,15 @@
+walloon_partisans = {
+	enable = { always = yes }
+
+	icon = GFX_looting_resistance_icon
+	
+	local_manpower = -1
+}
+
+LUX_Mdebug = {
+	enable = { always = yes }
+
+    icon = GFX_looting_resistance_icon
+
+    local_manpower = -1
+}

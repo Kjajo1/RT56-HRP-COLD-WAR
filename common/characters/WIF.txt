@@ -1,0 +1,123 @@
+characters = {
+	WIF_defensive_leader = {
+		name="Brigadier Carlston"
+		portraits={
+			civilian={
+				large="gfx/leaders/VEN/r56_portrait_VEN_Isias_Medina.dds"
+			}
+			army = {
+				large="gfx/leaders/VEN/r56_portrait_VEN_Isias_Medina.dds"
+				small="gfx/interface/ideas/generic/advisors/r56_generic_ROM_2.dds"
+			}
+		}
+		advisor={
+
+			slot = army_chief
+			idea_token = WIF_defensive_leader
+			allowed = {
+				original_tag = WIF
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		# field_marshal={
+		#	traits = { war_hero politically_connected old_guard defensive_doctrine }
+		#	skill = 2
+		#	attack_skill = 1
+		#	defense_skill = 3
+		#	planning_skill = 2
+		#	logistics_skill = 2
+		#	legacy_id=6966
+		#}
+	}
+	WIF_infantry_guy = {
+		advisor={
+
+			slot = high_command
+			idea_token = WIF_infantry_guy
+			allowed = {
+				original_tag = WIF
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={
+			traits = { commando jungle_rat }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	WIF_Anton_Allister={
+		advisor={
+			slot = political_advisor
+			idea_token = WIF_Anton_Allister
+			allowed  = {
+				original_tag  = WIF
+			}
+			traits  = {
+				fortification_engineer 
+			}
+			cost = 100
+		}
+	}
+	WIF_William_Afton={
+		advisor={
+			slot = political_advisor
+			idea_token = WIF_William_Afton
+			allowed  = {
+				original_tag  = WIF
+			}
+			traits  = {
+				quartermaster_general
+			}
+			cost = 100
+		}
+	}
+	WIF_James_Evans={
+		advisor={
+			slot = political_advisor
+			idea_token = WIF_James_Evans
+			allowed  = {
+				original_tag  = WIF
+			}
+			traits  = {
+				silent_workhorse
+			}
+			cost = 100
+		}
+	}
+	#WIF_Michael_Barker={
+	#	name = "WIF_Michael_Barker" 
+    #    army = {
+	#		large="gfx/leaders/WIF/General_WIF.dds"
+	#		small="gfx/interface/ideas/generic/advisors/r56_generic_ROM_2.dds"
+	#	}
+    #    allowed  = {
+	#		original_tag  = WIF
+	#	}
+	#
+    #    field_marshal = {
+    #        skill = 2
+    #        attack = 3
+    #        defense = 2
+    #        planning = 3
+    #        logistics = 2
+	#
+    #        can_be_fired = yes  # Can be dismissed
+    #        expire = "1965.1.1"  # Optional expiration date
+    #    }
+	#}
+}

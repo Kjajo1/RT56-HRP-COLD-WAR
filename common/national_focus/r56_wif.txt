@@ -1,0 +1,333 @@
+### THIS IS THE CURRENT IN-GAME TREE FOR NON-DLC OWNERS UNTIL THE COMPLETE REWORK IS COMPLETED ###
+
+focus_tree = {
+	id = r56_wif_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 30
+			original_tag = WIF
+			#always = no
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+
+	continuous_focus_position = { x = 0 y = 1000 }
+
+	########################
+	###Industrial Focuses###
+	########################
+
+	shared_focus = ABC_establish_a_general_staff
+    shared_focus = GEN_Aviation_Effort
+    shared_focus = GEN_Naval_Effort
+    shared_focus = GEN_begin_industrial_buildup
+    shared_focus = GEN_State_Matter
+    shared_focus = GEN_industrial_boom
+	#shared_focus = GCO_UNIFIED_gran_colombian_unification
+	
+	focus = {
+		id = WIF_Colonial_Administration
+		icon = GFX_focus_CONGO_gold_and_diamonds
+		x = 60
+		y = 0
+		cost = 5
+		available = {
+			owns_state = 691
+	    }
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 150
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
+	}
+
+	focus = {
+		id = WIF_Integrate_Locals
+		icon = GFX_focus_generic_election
+		prerequisite = { focus =  WIF_Colonial_Administration}
+		relative_position_id = WIF_Colonial_Administration
+		x = 0
+		y = 1
+		cost = 10
+		available = {
+			owns_state = 691
+			687 = { compliance > 75 }
+			689 = { compliance > 75 }
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			add_state_core = 687
+			add_state_core = 689
+			add_state_core = 1085
+			add_state_core = 1082
+			add_state_core = 308
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MILITARY_IMPROVEMENT }
+	}
+
+	focus = {
+		id = WIF_Expand_Holdings
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus =  WIF_Integrate_Locals}
+		#mutually_exclusive = { focus = WIF_Develop_Our_Lands}
+		relative_position_id = WIF_Colonial_Administration
+		x = 3
+		y = 2
+		cost = 10
+		available = {
+			owns_state = 691
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+          	add_state_claim = 315
+			add_state_claim = 994
+			add_state_claim = 319
+			add_state_claim = 318
+			add_state_claim = 686
+			add_state_claim = 972
+			add_state_claim = 1079
+			add_state_claim = 694
+			add_state_claim = 1080
+			add_state_claim = 695
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MILITARY_IMPROVEMENT }
+	}
+
+	focus = {
+		id = WIF_Develop_Our_Lands
+		icon = GFX_goal_generic_fortify_city
+		#mutually_exclusive = { focus = WIF_Expand_Holdings}
+		prerequisite = { focus =  WIF_Integrate_Locals}
+		relative_position_id = WIF_Colonial_Administration
+		x = -3
+		y = 2
+		cost = 10
+		available = {
+			owns_state = 691
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			every_owned_state = {
+        		add_building_construction = {
+            	type = infrastructure
+            	level = 2
+				}
+        	}
+    	}
+	
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MILITARY_IMPROVEMENT }
+	}
+
+	focus = {
+		id = WIF_Industrialize_Holdings
+		icon = GFX_focus_BRA_amazon_colonization
+		prerequisite = { focus = WIF_Expand_Holdings focus = WIF_Develop_Our_Lands}
+		relative_position_id = WIF_Colonial_Administration
+		x = -2
+		y = 3
+		cost = 10
+        available = {
+			owns_state = 691
+	    }
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 687 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 687 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = WIF_Acquire_USA_Planes
+		icon = GFX_focus_generic_befriend_usa
+		prerequisite = { focus = WIF_Expand_Holdings focus = WIF_Develop_Our_Lands}
+		relative_position_id = WIF_Colonial_Administration
+		x = 0
+		y = 3
+		cost = 3
+
+		available = {
+			controls_state = 691
+			USA = {
+				exists = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				create_equipment_variant = {
+					name = "P-36A"
+					type = small_plane_airframe_0
+					modules = {
+						fixed_main_weapon_slot = light_mg_4x
+						fixed_auxiliary_weapon_slot_1 = light_mg_2x
+						engine_type_slot = engine_2_1x
+						special_type_slot_1 = empty
+					}
+					icon = "GFX_USA_fighter1_medium"
+				}
+				create_equipment_variant = {
+					name = "SBU Corsair"
+					type = small_plane_cas_airframe_0
+					modules = {
+						fixed_main_weapon_slot = bomb_locks
+						fixed_auxiliary_weapon_slot_1 = empty
+						engine_type_slot = engine_1_1x
+						special_type_slot_1 = dive_brakes_small
+					}
+					icon = "GFX_USA_CAS1_medium"
+				}
+				add_opinion_modifier = { target = USA modifier = GEN_aircraft_american }			
+				add_equipment_to_stockpile = {
+					type = small_plane_cas_airframe_0 
+					amount = 100
+					producer = USA
+				}
+		   	}
+			else = {
+				add_equipment_to_stockpile = {
+					type = cas_equipment_1
+					amount = 50
+					producer = USA
+				}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_0
+					amount = 50
+					producer = USA
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
+
+	focus = {
+		id = WIF_Integrate_New_Holdings
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = WIF_Expand_Holdings}
+		relative_position_id = WIF_Colonial_Administration
+		x = 2
+		y = 3
+		cost = 10
+		available = {
+			controls_state = 491
+			controls_state = 315
+			controls_state = 994
+			controls_state = 319
+			controls_state = 318
+			controls_state = 686
+			controls_state = 972
+			controls_state = 1079
+			controls_state = 694
+			controls_state = 1080
+			controls_state = 695
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+
+        completion_reward = {
+			add_state_core = 315
+			add_state_core = 994
+			add_state_core = 319
+			add_state_core = 318
+			add_state_core = 686
+			add_state_core = 972
+			add_state_core = 1079
+			add_state_core = 694
+			add_state_core = 1080
+			add_state_core = 695
+        }
+		search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT }
+	}
+
+    focus = {
+		id = WIF_Final_Battle
+		icon = GFX_focus_generic_attack_venezuela
+		prerequisite = { focus = WIF_Industrialize_Holdings}
+		prerequisite = { focus = WIF_Acquire_USA_Planes}
+		#prerequisite = { focus = WIF_Integrate_New_Holdings}
+		relative_position_id = WIF_Colonial_Administration
+		x = 0
+		y = 4
+		cost = 10
+
+		available = {
+			controls_state = 687
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			add_war_support = 0.25
+			add_state_claim = 488
+			add_state_claim = 307
+			add_state_claim = 948
+			add_state_claim = 489
+			declare_war_on = {
+            	target = VEN
+            	type = annex_everything
+        	}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
+
+}

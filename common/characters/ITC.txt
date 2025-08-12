@@ -1,0 +1,28 @@
+characters = {
+	ITC_Luigi_Pirandello = {
+        name = ITC_Luigi_Pirandello
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ITC/r56_portrait_ITC_Luigi_Pirandello.dds"
+			}
+		}
+		country_leader = {
+			ideology = neutrality
+			expire = "1960.1.1.1"
+			id = -1
+		}
+    }
+    ITC_Luigi_Pirandello2 = {
+        name = ITC_Luigi_Pirandello
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ITC/r56_portrait_ITC_Luigi_Pirandello.dds"
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			expire = "1960.1.1.1"
+			id = -1
+		}
+    }
+}
