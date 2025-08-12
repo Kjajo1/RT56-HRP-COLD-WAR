@@ -22,4 +22,4 @@ When the meta is gone there will be balance
 
 Only roleplay will remain
 
-kill john lennon
+Kill John Lennon
