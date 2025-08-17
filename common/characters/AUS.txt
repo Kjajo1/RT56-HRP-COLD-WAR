@@ -148,7 +148,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = socialism
+			ideology = N/A
 			expire = "1965.1.1"
 			id = -1
 			traits = {
@@ -414,6 +414,14 @@ characters = {
 		}
 		country_leader = {
 			ideology = absolute_monarchism
+			traits = {
+			}
+			expire = "1965.1.1"
+			id = -1
+		}
+		
+		country_leader = {
+			ideology = socialism
 			traits = {
 			}
 			expire = "1965.1.1"
@@ -2772,7 +2780,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = conservatism
+			ideology = N/A
 			traits = {
 				AUS_pragmatic_reformer
 			}

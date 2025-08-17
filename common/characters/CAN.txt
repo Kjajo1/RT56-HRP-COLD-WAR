@@ -1,20 +1,19 @@
 characters = {
-	CAN_mackenzie_king = {
-		#"POLITICS_MACKENZIE_KING_DESC"
-		name = CAN_mackenzie_king
+	CAN_m_j_coldwell = {
+		#"POLITICS_M_J_COLDWELL_DESC"
+		name = CAN_m_j_coldwell
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/CAN/Portrait_Canada_Mackenzie_King.dds"
+				large = "gfx/leaders/CAN/r56_portrait_CAN_Major_James_Coldwell.dds"
 			}
 		}
 		country_leader = {
-			ideology = liberalism
+			ideology = socialism
 			expire = "1965.1.1"
 			id = -1
 			traits = {
-				great_compromiser
+				teacher_of_teachers
 				r56_trait_opposed_to_fascism
-				r56_trait_opposed_to_communism
 			}
 		}
 	}

@@ -33,7 +33,7 @@ set_fuel_ratio = 1.0
 
 recruit_character = JAP_fumimaro_konoe
 recruit_character = JAP_tetsu_katayama
-recruit_character = JAP_kyuichi_tokuda
+recruit_character = JAP_yoshio_shiga
 recruit_character = JAP_emperor_hirohito
 recruit_character = JAP_tomoyuki_yamashita
 recruit_character = JAP_hisaichi_terauchi
@@ -408,13 +408,13 @@ set_autonomy = {
 }
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = communism
 	last_election = "1932.2.20" #historically 1931 but I wanted to skip the 1937 legislative elections for now, at least until we can make a new tree or something.
 	election_frequency = 72
 	elections_allowed = yes
 }
 set_popularities = {
-	fascism = 70
+	communism = 70
 	democratic = 30
 }
 

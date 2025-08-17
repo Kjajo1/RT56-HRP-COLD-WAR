@@ -11,26 +11,6 @@ characters = {
  #    #  #    #  #    #  #   ##    #    #   #     #        #       #       #    #  #    #  #       #   #   #    # 
   ####    ####    ####   #    #    #    #    #    #        ######  ######  #    #  #####   ######  #    #   ####  
                                                                                                                   
-
-	SOV_iosif_stalin = {
-		name = SOV_iosif_stalin
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/SOV/r56_portrait_SOV_Joseph_Stalin.dds"
-			}
-			army = {
-				large = "gfx/leaders/SOV/r56_portrait_SOV_Joseph_Stalin.dds"
-				small = "gfx/interface/ideas/idea_SOV_joseph_stalin.dds"
-			}
-		}
-		country_leader = {
-			ideology = stalinism
-			traits = { stalin_heart_of_steel }
-			expire = "1953.3.1.1"
-			id = -1
-		}
-	}
-
 	# Rodzaevsky moved to the bottom of the file
 
 	SOV_tsar_vladimir_kirillovich = {
@@ -162,9 +142,22 @@ characters = {
 		name = SOV_georgy_zhukov
 
 		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/r56_portrait_SOV_Georgy_Zhukov.dds"
+			}
 			army = {
 				small = "GFX_idea_georgy_zhukov"
 				large = "gfx/leaders/SOV/r56_portrait_SOV_Georgy_Zhukov.dds"
+			}
+		}
+
+		country_leader = {
+			ideology = socialism
+			expire = "1956.3.1.1"
+			id = -1
+			traits = { 
+				rt56_war_hero 
+				army_connections 
 			}
 		}
 
@@ -5075,15 +5068,6 @@ characters = {
 				large = "gfx/leaders/SOV/r56_portrait_SOV_Alexander_Kerensky.dds"
 				small = "GFX_idea_SOV_Alexander_Kerensky"
 			}
-		}
-		country_leader = {
-			ideology = socialism
-			traits = {
-				socialist_revolutionary_leader
-				r56_trait_opposed_to_fascism
-			}
-			expire = "1953.3.1"
-			id = -1
 		}
 		allowed_civil_war = { tag = SOV }
 

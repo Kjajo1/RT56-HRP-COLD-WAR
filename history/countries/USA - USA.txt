@@ -1,5 +1,7 @@
 ﻿capital = 361
 
+set_party_names = { USA_republican_party }
+
 if = {
 	limit = {
 		NOT = {

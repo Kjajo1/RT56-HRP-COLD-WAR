@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
  #NEW
  anarcho_capitalism:0 "Western Anarcho-Capitalism"
@@ -208,14 +208,14 @@
  AST_communism_party_long:0 "Communist Party of Australia"
 
  #AUS
- AUS_communism_party:0 "SDAPÖ-L"
- AUS_communism_party_long:0 "Sozialdemokratische Arbeiterpartei Österreichs - Left"
-#  AUS_democratic_party:0 "SDAPÖ-R" # moved to replace
- AUS_democratic_party_long:0 "Sozialdemokratische Arbeiterpartei Österreichs - Right"
+ AUS_communism_party:0 "KPÖ"
+ AUS_communism_party_long:0 "Kommunistische Partei Österreichs"
+#  AUS_democratic_party:0 "ÖVP" # moved to replace
+ AUS_democratic_party_long:0 "Österreichische VolksparteI"
  AUS_fascism_party:1 "VF"
  AUS_fascism_party_long:1 "Vaterländische Front"
- AUS_neutrality_party:1 "Habsburg"
- AUS_neutrality_party_long:1 "Haus Habsburg"
+ AUS_neutrality_party:1 "Imperial Loyalists"
+ AUS_neutrality_party_long:1 "Imperial Loyalists"
 
  #BAD
  BAD_neutrality_party:0 "Haus Baden"

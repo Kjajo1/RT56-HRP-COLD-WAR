@@ -41,15 +41,15 @@ characters={
 		}
 	}
 
-	JAP_kyuichi_tokuda={
-		name=JAP_kyuichi_tokuda
+	JAP_yoshio_shiga={
+		name=JAP_yoshio_shiga
 		portraits={
 			civilian={
-				large="GFX_Portrait_kyuichi_tokuda"
+				large="gfx/leaders/jap/r56_portrait_JAP_Yoshio.dds"
 			}
 		}
 		country_leader={
-			ideology=marxism
+			ideology=leninism
 			expire="1989.1.1.1"
 			id=-1
 			traits = {

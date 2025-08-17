@@ -554,15 +554,15 @@ set_war_support = 0.3
 
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = democracy
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 35
-	fascism = 40
+	democratic = 70
+	fascism = 5
 	communism = 10
 	neutrality = 15
 }

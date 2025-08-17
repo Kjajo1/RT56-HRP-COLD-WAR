@@ -6,7 +6,7 @@ state={
 	state_category = enclave
 	
 	history={
-		owner = FRI
+		owner = LEC
 		add_core_of = FRI
 		add_core_of = CHI
 		add_core_of = PRC

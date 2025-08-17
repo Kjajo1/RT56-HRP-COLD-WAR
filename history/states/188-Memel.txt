@@ -11,7 +11,7 @@ state=
 		victory_points = {
 			3288 3
 		}
-		owner = POL
+		owner = UBD
 		buildings = {
 			infrastructure = 3 #was: 5
 			3288 = {
@@ -19,6 +19,7 @@ state=
 			}
 		}
 		add_core_of = LIT
+		add_core_of = UBD
 		#add_core_of = PRE
 		add_core_of = POL
 

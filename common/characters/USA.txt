@@ -4,13 +4,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/USA/r56_portrait_USA_Franklin_Roosevelt.dds"
-			}
-		}
-		country_leader={
-			ideology=liberalism
-			traits={ dislikes_germany liberal_grandee }
-			expire="1947.1.1.1"
-			id=-1
+			}	
 		}
 	}
 
@@ -431,13 +425,6 @@ characters={
 				factor = 1.000
 			}
 		}
-		country_leader={
-			ideology=conservatism
-			traits={ army_connections
-			r56_trait_opposed_to_communism }
-			expire="1953.1.1.12"
-			id=-1
-		}
 
 		field_marshal={
 			traits={ trait_cautious armor_officer politically_connected organizer logistics_wizard offensive_doctrine }
@@ -538,6 +525,13 @@ characters={
 				large="gfx/leaders/USA/Portrait_USA_Douglas_MacArthur.dds"
 				small="GFX_idea_douglas_macarthur"
 			}
+			}
+		country_leader={
+			ideology=liberalism
+			traits={ dislikes_germany rt56_war_hero }
+			expire="1947.1.1.1"
+			id=-1
+		}
 		}
 		advisor={
 			slot = army_chief

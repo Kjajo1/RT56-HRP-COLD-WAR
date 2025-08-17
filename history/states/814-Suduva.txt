@@ -4,7 +4,7 @@ state={
 	name="STATE_814"
 
 	history={
-		owner = POL
+		owner = UBD
 		victory_points = {
 			11312 1 #Marijampole
 		}
@@ -17,6 +17,7 @@ state={
 		}
 		add_core_of = LIT
 		add_core_of = POL
+		add_core_of = UBD
 
 	}
 

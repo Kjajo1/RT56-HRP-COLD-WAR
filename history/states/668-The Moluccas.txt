@@ -9,7 +9,7 @@ state={
 		oil = 4 #Ceram Island Boela oil field
 	}
 	history={
-		owner = INS
+		owner = AST
 		add_core_of = INS
 		add_core_of = MLK
 		victory_points = {

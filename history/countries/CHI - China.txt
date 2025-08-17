@@ -102,11 +102,7 @@ if = {
 	}
 }
 
-set_party_name = { ideology = fascism long_name = KMT_blueshirt name = KMT_blueshirt }
-save_global_event_target_as = KMT_central_gov_tag
-set_party_name = { ideology = communism long_name = KMT_CPWDP_long name = KMT_CPWDP }
-
-recruit_character = CHI_chiang_kai_shek
+recruit_character = CHI_qi_xieyuan
 recruit_character = CHI_hu_shih
 recruit_character = CHI_huang_qixiang
 recruit_character = CHI_carsun_chang
@@ -181,16 +177,16 @@ set_convoys = 40
 
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 1
+	democratic = 56
 	fascism = 2
-	communism = 1
-	neutrality = 96
+	communism = 39
+	neutrality = 3
 }
 
 create_country_leader = {

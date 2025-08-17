@@ -4,7 +4,7 @@ state={
 	name="STATE_810"
 
 	history={
-		owner = POL
+		owner = UBD
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -17,6 +17,7 @@ state={
 
 		}
 		add_core_of = LAT
+		add_core_of = UBD
 		victory_points = {
 			310 3 #Daugavpils
 		}

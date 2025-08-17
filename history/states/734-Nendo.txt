@@ -5,8 +5,9 @@ state={
 	state_category = small_island
 
 	history={
-		owner = ENG
+		owner = AST
 		add_core_of = TON
+		add_core_of = AST
 		buildings = {
 			infrastructure = 2
 			13419 = {

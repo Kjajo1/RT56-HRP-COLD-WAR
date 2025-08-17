@@ -191,14 +191,14 @@ add_ideas = {
 
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = communism
 	last_election = "1934.9.15"
 	election_frequency = 36
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 93
-	communism = 7
+	democratic = 7
+	communism = 93
 }
 
 country_event = {

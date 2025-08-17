@@ -70,8 +70,8 @@ characters = {
 	#	}
 	#}
 
-	CHI_chiang_kai_shek = {
-		name = CHI_chiang_kai_shek
+	CHI_qi_xieyuan = {
+		name = CHI_qi_xieyuan
 		portraits={
 			civilian={
 				large = "gfx/leaders/CHI/r56_portrait_CHI_Chiang_Kai_Shek.dds"
@@ -92,7 +92,7 @@ characters = {
 			legacy_id=1001
 		}
 		country_leader={
-			ideology = the_peoples_tutelage
+			ideology = populism
 			expire="1965.1.1"
 			id=-1
 			traits = {

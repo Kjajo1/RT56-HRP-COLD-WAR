@@ -279,13 +279,13 @@ set_autonomy = {
 add_to_tech_sharing_group = commonwealth_research
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1935.11.14"
 	election_frequency = 60 #next election 1940 (tho suspended)
 	elections_allowed = yes ##suspended through duration of war, which is handled via event
 }
 set_popularities = {
-	democratic = 97
+	neutrality = 97
 	fascism = 2
 	communism = 1
 }
@@ -308,6 +308,7 @@ give_market_access = IRQ	#1930 Anglo-Iraqi Treaty
 #give_guarantee = CZE
 
 # Order matters - here Chamberlain becomes starting leader
+recruit_character = ENG_edward_viii
 recruit_character = ENG_oswald_mosley
 recruit_character = ENG_stanley_baldwin
 recruit_character = ENG_neville_chamberlain
@@ -413,7 +414,6 @@ recruit_character = ENG_harold_harmsworth
 recruit_character = ENG_john_dill
 recruit_character = ENG_gilbert_stephenson
 
-recruit_character = ENG_edward_viii
 recruit_character = ENG_george_vi
 recruit_character = ENG_elizabeth_ii
 recruit_character = ENG_charles_edward_of_albany

@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = INS
+		owner = AST
 		add_core_of = INS
 		add_core_of = EIS
 		victory_points = {
