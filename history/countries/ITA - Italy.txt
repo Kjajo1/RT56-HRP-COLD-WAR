@@ -515,24 +515,30 @@ if = {
 
 
 # DIPLOMACY / WAR 36
-declare_war_on = {
-	target = ETH
-	type = annex_everything
-}
 give_guarantee = ALB
 give_guarantee = SAN
 
 set_convoys = 200
 
+set_autonomy = {
+	target = ALB
+	autonomous_state = autonomy_dominion
+}
+
+set_autonomy = {
+	target = SAN
+	autonomous_state = autonomy_dominion
+}
+
 set_politics = {
-	ruling_party = fascism
+	ruling_party = democracy
 	last_election = "1934.3.26"
 	election_frequency = 60
-	elections_allowed = no
+	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 13
-	fascism = 75
+	democratic = 75
+	fascism = 13
 	communism = 9
 	neutrality = 3
 }

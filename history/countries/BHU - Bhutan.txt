@@ -27,7 +27,7 @@ set_country_flag = started_out_as_landlocked
 
 ENG = {
 	set_autonomy = {
-		target = BHU
+		target = CHI
 		autonomous_state = autonomy_protectorate
 		freedom_level = 0.25
 	}	

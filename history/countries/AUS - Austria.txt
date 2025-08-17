@@ -36,7 +36,6 @@ set_variable = {
 set_variable = {
 	AUS_crackdown_time = 75
 }
-set_country_flag = started_out_as_landlocked
 set_technology = {
 	etax_doctrine = 1
 	camo = 1
@@ -88,12 +87,9 @@ if = {
 	}
 }
 
-### Store Austrian initial states - Used for removing German cores in Austria when German capitulates after having done successful Anschluss
-every_owned_state = {
-	limit = {
-		is_core_of = ROOT
-	}
-	add_to_array = { ROOT.AUS_initial_states = THIS }
+set_autonomy = {
+	target = BAY
+	autonomous_state = autonomy_dominion
 }
 
 # may need character adjustments to suit the mods additions

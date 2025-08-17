@@ -252,7 +252,7 @@ set_autonomy = {
 	freedom_level = 0.35
 }
 set_autonomy = {
-	target = CAN
+	target = NAM
 	autonomous_state = autonomy_dominion
 	freedom_level = 0.4
 }
@@ -262,18 +262,8 @@ set_autonomy = {
 	freedom_level = 0.4
 }
 set_autonomy = {
-	target = AST
+	target = ETH
 	autonomous_state = autonomy_dominion
-	freedom_level = 0.2
-}
-set_autonomy = {
-	target = NZL
-	autonomous_state = autonomy_dominion
-	freedom_level = 0.2
-}
-set_autonomy = {
-	target = WIF
-	autonomous_state = autonomy_colony
 	freedom_level = 0.2
 }
 add_to_tech_sharing_group = commonwealth_research

@@ -378,6 +378,16 @@ add_equipment_to_stockpile = {
 
 set_convoys = 15
 
+set_autonomy = {
+	target = UBD
+	autonomous_state = autonomy_dominion
+}
+
+set_autonomy = {
+	target = BLR
+	autonomous_state = autonomy_dominion
+}
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1933.05.08"

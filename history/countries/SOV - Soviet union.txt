@@ -1088,6 +1088,26 @@ if = {
 
 set_convoys = 50
 
+set_autonomy = {
+	target = SWE
+	autonomous_state = autonomy_dominion
+}
+
+set_autonomy = {
+	target = BUL
+	autonomous_state = autonomy_dominion
+}
+
+set_autonomy = {
+	target = TUR
+	autonomous_state = autonomy_dominion
+}
+
+set_autonomy = {
+	target = DEN
+	autonomous_state = autonomy_dominion
+}
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "1933.7.1"

@@ -12,7 +12,6 @@ state={
 
 	history={
 		add_core_of = SUR
-		add_core_of = BRA
 		owner = BRA
 		buildings = {
 			infrastructure = 2 #was 3

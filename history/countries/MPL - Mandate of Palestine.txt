@@ -138,14 +138,6 @@ if = {
 	}
 }
 
-ENG = {
-	set_autonomy = {
-		target = MPL
-		autonomous_state = autonomy_colony
-	}
-	add_to_tech_sharing_group = commonwealth_research
-}
-
 #Ideas
 add_ideas = MPL_mandate
 add_ideas = MPL_aliyah_start

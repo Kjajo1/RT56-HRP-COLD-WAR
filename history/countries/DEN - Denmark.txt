@@ -196,23 +196,6 @@ if = {
 		mtg_transport = 1
 	}
 }
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_autonomy = {
-		target = ICE
-		autonomous_state = autonomy_personal_union
-		freedom_level = 0.85 #much larger point range
-	}
-	else = {
-		set_autonomy = {
-			target = ICE
-			autonomous_state = autonomy_dominion
-			freedom_level = 0.25
-		}
-	}
-}
 
 
 set_politics = {

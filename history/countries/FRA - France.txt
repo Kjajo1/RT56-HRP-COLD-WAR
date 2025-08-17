@@ -200,7 +200,7 @@ country_event = { id = france.103 days = 15 random_days = 5 }		#deflation starts
 country_event = { id = france.103 days = 947 random_days = 30 }		#communists remove support from Popular Front
 
 set_autonomy = {
-	target = FRI
+	target = COG
 	autonomy_state = autonomy_integrated_puppet
 }
 

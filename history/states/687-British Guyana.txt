@@ -11,7 +11,6 @@ state={
 
 	history={
 		add_core_of = GYA
-		add_core_of = BRA
 		add_claim_by = VEN
 		owner = BRA
 		victory_points = {
