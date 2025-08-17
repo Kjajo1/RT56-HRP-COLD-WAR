@@ -35,6 +35,7 @@ state={
 		}
 		add_core_of = GER
 		#add_core_of = PRE
+		set_demilitarized_zone = yes
 		#add_claim_by = KSH - Wrong state
 	}
 
