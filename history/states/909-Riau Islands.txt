@@ -9,7 +9,7 @@ state={
 		12113 5057
 	}
 	history = {
-		owner = INS
+		owner = ENG
 		add_core_of = INS
 		buildings = {
 			infrastructure = 2
