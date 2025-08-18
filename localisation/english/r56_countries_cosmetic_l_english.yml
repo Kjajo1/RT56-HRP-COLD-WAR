@@ -1214,6 +1214,8 @@
  NEWSPA_neutrality:0 "Viceroyalty of New Spain"
  NEWSPA_neutrality_ADJ:0 "New Spanish"
  NEWSPA_neutrality_DEF:0 "the Viceroyalty of New Spain"
+ #MEX
+ HON_MEX_autonomy_integrated_puppet:0 "Administración Provisional de Honduras"
 
  #HUN
  #Austria-Hungary

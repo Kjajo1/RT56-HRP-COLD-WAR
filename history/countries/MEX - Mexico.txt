@@ -119,6 +119,31 @@ set_country_flag = hispanic
 
 set_convoys = 45
 
+set_autonomy = {
+	target = HON
+	autonomous_state = integrated_puppet
+}
+
+set_autonomy = {
+	target = ELS
+	autonomous_state = autonomy_dominion
+}
+
+set_autonomy = {
+	target = NIC
+	autonomous_state = autonomy_dominion
+}
+
+set_autonomy = {
+	target = ELS
+	autonomous_state = autonomy_dominion
+}
+
+set_autonomy = {
+	target = COS
+	autonomous_state = autonomy_dominion
+}
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1934.7.1"
