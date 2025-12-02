@@ -1,0 +1,1711 @@
+focus_tree = {
+	id = r56_australian_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = AST
+		}
+	}
+	
+	default = no
+	
+continuous_focus_position = { x = 50 y = 1000 }
+
+	focus = {
+		id = AST_starter_fifty_years_of_federation
+		icon = GFX_goal_generic_small_arms
+		cost = 1
+		x = 40
+		y = 0
+	}	
+
+	focus = {
+		id = AST_communist_continue_the_communist_course
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_starter_fifty_years_of_federation }
+		relative_position_id = AST_starter_fifty_years_of_federation
+		mutually_exclusive = { focus = AST_syndicalist_big_jims_vision }
+		mutually_exclusive = { focus = AST_labor_not_dead_yet }
+		cost = 1
+		x = 0
+		y = 2
+	}
+	
+	focus = {
+		id = AST_communist_split_split_in_the_party
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_communist_continue_the_communist_course }
+		relative_position_id = AST_communist_continue_the_communist_course
+		cost = 1
+		x = 1
+		y = 2
+	}
+
+	focus = {
+		id = AST_communist_split_question_patersons_mandate
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_communist_split_split_in_the_party }
+		relative_position_id = AST_communist_split_split_in_the_party
+		mutually_exclusive = { focus = AST_communist_split_crack_down_on_needless_factionalism }
+		cost = 1
+		x = 1.5
+		y = 1.5
+	}
+
+	focus = {
+		id = AST_communist_split_crack_down_on_needless_factionalism
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_communist_split_split_in_the_party }
+		relative_position_id = AST_communist_split_split_in_the_party
+		mutually_exclusive = AST_communist_split_question_patersons_mandate
+		cost = 1
+		x = -1.5
+		y = 1.5
+	}
+
+
+	focus = {
+		id = AST_communist_split_the_little_comrades
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_communist_split_split_in_the_party }
+		relative_position_id = AST_communist_split_split_in_the_party
+		cost = 1
+		x = 0
+		y = 2.5
+	}
+
+	focus = {
+		id = AST_communist_split_loyalty_to_democracy
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_communist_split_the_little_comrades }
+		prerequisite = { focus = AST_communist_split_crack_down_on_needless_factionalism }
+		relative_position_id = AST_communist_split_the_little_comrades
+		cost = 1
+		x = -1.5
+		y = 1.5
+	}
+
+	focus = {
+		id = AST_communist_split_allure_of_authoritarianism
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_communist_split_the_little_comrades }
+		prerequisite = { focus = AST_communist_split_question_patersons_mandate }
+		relative_position_id = AST_communist_split_the_little_comrades
+		cost = 1
+		x = 1.5
+		y = 1.5
+	}
+
+	focus = { 
+		id = AST_communist_split_debate_boils_over 
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { 
+			focus = AST_communist_split_loyalty_to_democracy 
+			focus = AST_communist_split_allure_of_authoritarianism }
+		relative_position_id = AST_communist_split_the_little_comrades
+		cost = 1
+		x = 0
+		y = 2.5
+	}
+
+	focus = {
+		id = AST_communist_split_preserve_the_quorum
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_communist_split_debate_boils_over }
+		relative_position_id = AST_communist_split_debate_boils_over
+		mutually_exclusive = AST_communist_split_establishing_the_party_state
+		cost = 1
+		x = -1.5
+		y = 1
+	}
+
+	focus = {
+		id = AST_communist_split_neutralise_the_wilcoxians
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_communist_split_preserve_the_quorum }
+		relative_position_id = AST_communist_split_preserve_the_quorum
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_communist_split_a_united_front
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_communist_split_neutralise_the_wilcoxians }
+		relative_position_id = AST_communist_split_neutralise_the_wilcoxians
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_communist_split_socialism_with_a_human_face
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_communist_split_a_united_front }
+		relative_position_id = AST_communist_split_a_united_front
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_communist_split_establishing_the_party_state
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_communist_split_debate_boils_over }
+		relative_position_id = AST_communist_split_debate_boils_over
+		mutually_exclusive = { focus = AST_communist_split_preserve_the_quorum }
+		cost = 1
+		x = 1.5
+		y = 1
+	}
+
+	focus = {
+		id = AST_communist_split_approaching_the_military
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_communist_split_establishing_the_party_state }
+		relative_position_id = AST_communist_split_establishing_the_party_state
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_communist_split_purge_the_unwilling
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_communist_split_approaching_the_military }
+		relative_position_id = AST_communist_split_approaching_the_military
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_communist_split_the_revolution_secured
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_communist_split_purge_the_unwilling }
+		relative_position_id = AST_communist_split_purge_the_unwilling
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_wap_australasia_for_all
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_communist_continue_the_communist_course }
+		relative_position_id = AST_communist_continue_the_communist_course
+		cost = 1
+		x = -3
+		y = 2
+	}
+
+	focus = {
+		id = AST_wap_eliminate_legal_loopholes
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_wap_australasia_for_all }
+		relative_position_id = AST_wap_australasia_for_all
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_wap_appeal_to_foreign_immigrants
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_wap_eliminate_legal_loopholes }
+		relative_position_id = AST_wap_eliminate_legal_loopholes
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_wap_boundless_plains_to_share
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_wap_appeal_to_foreign_immigrants }
+		relative_position_id = AST_wap_appeal_to_foreign_immigrants
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_socialism_in_the_great_southern_land
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_communist_continue_the_communist_course }
+		relative_position_id = AST_communist_continue_the_communist_course
+		cost = 1
+		x = 7.5
+		y = 1
+	}
+
+	focus = {
+		id = AST_eco_communist_land_reform
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_socialism_in_the_great_southern_land }
+		relative_position_id = AST_socialism_in_the_great_southern_land
+		cost = 1
+		x = 2
+		y = 2
+	}
+
+	focus = {
+		id = AST_eco_revisit_industrial_agreements
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_eco_communist_land_reform }
+		relative_position_id = AST_eco_communist_land_reform
+		cost = 1
+		x = -2
+		y = 1
+	}
+
+	focus = {
+		id = AST_eco_continue_total_nationalisation
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_eco_revisit_industrial_agreements }
+		relative_position_id = AST_eco_revisit_industrial_agreements
+		mutually_exclusive = { focus = AST_eco_limited_market_competition }
+		cost = 1
+		x = -1.5
+		y = 1
+	}
+
+	focus = {
+		id = AST_eco_communal_ownership_for_communal_benefit
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_eco_continue_total_nationalisation }
+		relative_position_id = AST_eco_continue_total_nationalisation
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_eco_limited_market_competition
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_eco_revisit_industrial_agreements }
+		relative_position_id = AST_eco_revisit_industrial_agreements
+		mutually_exclusive = AST_eco_continue_total_nationalisation
+		cost = 1
+		x = 1.5
+		y = 1
+	}
+
+	focus = {
+		id = AST_eco_workers_corporations
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_eco_limited_market_competition }
+		relative_position_id = AST_eco_limited_market_competition
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_eco_implementing_rural_collectivisation
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_eco_communist_land_reform }
+		relative_position_id = AST_eco_communist_land_reform
+		cost = 1
+		x = 4
+		y = 1
+	}
+
+	focus = {
+		id = AST_eco_office_of_agricultural_affairs
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_eco_implementing_rural_collectivisation }
+		relative_position_id = AST_eco_implementing_rural_collectivisation
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_eco_collectivisation_stalled
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_eco_office_of_agricultural_affairs }
+		relative_position_id = AST_eco_office_of_agricultural_affairs
+		cost = 1
+		x = -2
+		y = 1
+	}
+
+	focus = {
+		id = AST_eco_outstretch_the_hand
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_eco_collectivisation_stalled }
+		relative_position_id = AST_eco_collectivisation_stalled
+		cost = 1
+		x = -1.5
+		y = 1
+		mutually_exclusive = { focus = AST_eco_clench_the_fist }
+	}
+
+	focus = {
+		id = AST_eco_concessions_to_the_farmers
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_eco_outstretch_the_hand }
+		relative_position_id = AST_eco_outstretch_the_hand
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_eco_slow_road_to_collectivisation
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_eco_concessions_to_the_farmers }
+		relative_position_id = AST_eco_concessions_to_the_farmers
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_eco_clench_the_fist
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_eco_collectivisation_stalled }
+		relative_position_id = AST_eco_collectivisation_stalled
+		cost = 1
+		x = 1.5
+		y = 1
+	}
+
+	focus = {
+		id = AST_eco_arrest_rural_class_traitors
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_eco_clench_the_fist }
+		relative_position_id = AST_eco_clench_the_fist
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_eco_collectivisation_at_gunpoint
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_eco_arrest_rural_class_traitors }
+		relative_position_id = AST_eco_arrest_rural_class_traitors
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_eco_collectivisation_successful
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_eco_office_of_agricultural_affairs }
+		relative_position_id = AST_eco_office_of_agricultural_affairs
+		cost = 1
+		x = 3
+		y = 1
+		mutually_exclusive = { focus = AST_eco_collectivisation_stalled }
+	}
+
+	focus = {
+		id = AST_eco_farmer_worker_alliance
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_eco_collectivisation_successful }
+		relative_position_id = AST_eco_collectivisation_successful
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_eco_fruits_of_our_labour
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_eco_farmer_worker_alliance }
+		relative_position_id = AST_eco_farmer_worker_alliance
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_oceania_pan_oceanic_ambitions
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_communist_continue_the_communist_course}
+		relative_position_id = AST_communist_continue_the_communist_course
+		cost = 1
+		x = -8
+		y = 1
+	}
+
+	focus = {
+		id = AST_oceania_integrating_hawaii
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_oceania_pan_oceanic_ambitions }
+		relative_position_id = AST_oceania_pan_oceanic_ambitions
+		cost = 1
+		x = -1.5
+		y = 1
+	}
+
+	focus = {
+		id = AST_oceania_adopt_hawaiian_as_an_official_language
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_oceania_integrating_hawaii }
+		relative_position_id = AST_oceania_integrating_hawaii
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_oceania_pacific_islanders_in_the_quorum
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_oceania_pan_oceanic_ambitions }
+		relative_position_id = AST_oceania_pan_oceanic_ambitions
+		cost = 1
+		x = 1.5
+		y = 1
+	}
+
+	focus = {
+		id = AST_oceania_electrify_the_pacific_islands
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_oceania_pacific_islanders_in_the_quorum }
+		relative_position_id = AST_oceania_pacific_islanders_in_the_quorum
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_oceania_request_the_japanese_islands
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_oceania_electrify_the_pacific_islands }
+		relative_position_id = AST_oceania_electrify_the_pacific_islands
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_oceania_propose_a_joint_security_zone
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_oceania_request_the_japanese_islands }
+		relative_position_id = AST_oceania_request_the_japanese_islands
+		cost = 1
+		x = -1
+		y = 1
+	}
+
+	focus = {
+		id = AST_oceania_fund_pacific_separatism
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_oceania_request_the_japanese_islands }
+		relative_position_id = AST_oceania_request_the_japanese_islands
+		cost = 1
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_oceania_stronger_together
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { 
+			focus = AST_oceania_fund_pacific_separatism 
+			focus = AST_oceania_propose_a_joint_security_zone 
+			}
+		relative_position_id = AST_oceania_request_the_japanese_islands
+		cost = 1
+		x = 0
+		y = 2
+	}
+
+	focus = {
+		id = AST_oceania_the_neverending_duty
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_oceania_pan_oceanic_ambitions }
+		relative_position_id = AST_oceania_pan_oceanic_ambitions
+		cost = 1
+		x = -5
+		y = 1
+	}
+
+	focus = {
+		id = AST_oceania_publicise_sukarnos_corruption
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_oceania_the_neverending_duty }
+		relative_position_id = AST_oceania_the_neverending_duty
+		cost = 1
+		x = 1.5
+		y = 1
+	}
+
+	focus = {
+		id = AST_oceania_condemn_inaf_fascism
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_oceania_publicise_sukarnos_corruption }
+		relative_position_id = AST_oceania_publicise_sukarnos_corruption
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_oceania_foster_a_new_socialist_generation
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_oceania_the_neverending_duty }
+		relative_position_id = AST_oceania_the_neverending_duty
+		cost = 1
+		x = -1.5
+		y = 1
+	}
+
+	focus = {
+		id = AST_oceania_pan_oceanic_youth_groups
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_oceania_foster_a_new_socialist_generation }
+		relative_position_id = AST_oceania_foster_a_new_socialist_generation
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_big_jims_vision
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_starter_fifty_years_of_federation }
+		relative_position_id = AST_starter_fifty_years_of_federation
+		cost = 1
+		x = 28
+		y = 2
+	}
+
+	focus = {
+		id = AST_syndicalist_communism_for_the_commoners
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_big_jims_vision }
+		relative_position_id = AST_syndicalist_big_jims_vision
+		cost = 1
+		x = 0
+		y = 2
+	}
+
+	focus = {
+		id = AST_syndicalist_another_kind_of_union
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_communism_for_the_commoners }
+		relative_position_id = AST_syndicalist_communism_for_the_commoners
+		cost = 1
+		x = -2
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_court_the_stockmens_association
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_another_kind_of_union }
+		relative_position_id = AST_syndicalist_another_kind_of_union
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_in_the_hands_of_experts
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_court_the_stockmens_association }
+		relative_position_id = AST_syndicalist_court_the_stockmens_association
+		cost = 1
+		x = -1
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_quorum_supervision
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_in_the_hands_of_experts }
+		relative_position_id = AST_syndicalist_in_the_hands_of_experts
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_reasonable_collectivisation
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_court_the_stockmens_association }
+		relative_position_id = AST_syndicalist_court_the_stockmens_association
+		cost = 1
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_a_fair_deal_for_all
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_reasonable_collectivisation }
+		relative_position_id = AST_syndicalist_reasonable_collectivisation
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_actions_not_words
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_communism_for_the_commoners }
+		relative_position_id = AST_syndicalist_communism_for_the_commoners
+		cost = 1
+		x = 3
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_revolutionary_action_groups
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_actions_not_words }
+		relative_position_id = AST_syndicalist_actions_not_words
+		cost = 1
+		x = -1.5
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_big_jims_nippers
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_revolutionary_action_groups }
+		relative_position_id = AST_syndicalist_revolutionary_action_groups
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_increase_workers_councils_influence
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_actions_not_words }
+		relative_position_id = AST_syndicalist_actions_not_words
+		cost = 1
+		x = 3
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_establish_the_outback_unions
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_increase_workers_councils_influence }
+		relative_position_id = AST_syndicalist_increase_workers_councils_influence
+		cost = 1
+		x = -1
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_great_big_red_expanse
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_establish_the_outback_unions }
+		relative_position_id = AST_syndicalist_establish_the_outback_unions
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_favour_urban_tradespeople
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_increase_workers_councils_influence }
+		relative_position_id = AST_syndicalist_increase_workers_councils_influence
+		cost = 1
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_scout_coastal_talent
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { AST_syndicalist_favour_urban_tradespeople }
+		relative_position_id = AST_syndicalist_favour_urban_tradespeople
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_elevate_the_trade_unions
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_communism_for_the_commoners }
+		relative_position_id = AST_syndicalist_communism_for_the_commoners
+		cost = 1
+		x = 11
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_all_australasian_labour_union
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_elevate_the_trade_unions }
+		relative_position_id = AST_syndicalist_elevate_the_trade_unions
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_formalise_workers_self_defence_organisastions
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_all_australasian_labour_union }
+		relative_position_id = AST_syndicalist_all_australasian_labour_union
+		cost = 1
+		x = -1
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_the_union_boys
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_formalise_workers_self_defence_organisastions }
+		relative_position_id = AST_syndicalist_formalise_workers_self_defence_organisastions
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_accelerate_social_ownership_of_industry
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_all_australasian_labour_union }
+		relative_position_id = AST_syndicalist_all_australasian_labour_union
+		cost = 1
+		x = 3
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_organised_chaos
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_accelerate_social_ownership_of_industry }
+		relative_position_id = AST_syndicalist_accelerate_social_ownership_of_industry
+		cost = 1
+		x = -1
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_not_quite_anarchy
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_organised_chaos }
+		relative_position_id = AST_syndicalist_organised_chaos
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_unite_the_unions
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_accelerate_social_ownership_of_industry }
+		relative_position_id = AST_syndicalist_accelerate_social_ownership_of_industry
+		mutually_exclusive = { focus = AST_syndicalist_organised_chaos }
+		cost = 1
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_from_the_top_to_the_bottom
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_unite_the_unions }
+		relative_position_id = AST_syndicalist_unite_the_unions
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_revisionism_is_not_a_dirty_word
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_not_quite_anarchy focus = AST_syndicalist_from_the_top_to_the_bottom }
+		prerequisite = { focus = AST_syndicalist_the_union_boys }
+		prerequisite = { focus = AST_syndicalist_a_fair_deal_for_all }
+		prerequisite = { focus = AST_syndicalist_quorum_supervision }
+		prerequisite = { 
+			focus = AST_syndicalist_great_big_red_expanse 
+			focus = AST_syndicalist_scout_coastal_talent 
+			}
+		relative_position_id = AST_syndicalist_great_big_red_expanse
+		cost = 1
+		x = -2
+		y = 2
+	}
+
+	focus = {
+		id = AST_syndicalist_sideline_the_marxist_leninists
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_revisionism_is_not_a_dirty_word }
+		relative_position_id = AST_syndicalist_revisionism_is_not_a_dirty_word
+		x = -1
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_poach_the_labour_loyalists
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_revisionism_is_not_a_dirty_word }
+		relative_position_id = AST_syndicalist_revisionism_is_not_a_dirty_word
+		cost = 1
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_house_the_international_workers_association
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_poach_the_labour_loyalists }
+		prerequisite = { focus = AST_syndicalist_sideline_the_marxist_leninists }
+		relative_position_id = AST_syndicalist_revisionism_is_not_a_dirty_word
+		cost = 1
+		x = 0
+		y = 2
+	}
+
+	focus = {
+		id = AST_syndicalist_commitments_to_the_trade_councils
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_house_the_international_workers_association }
+		relative_position_id = AST_syndicalist_house_the_international_workers_association
+		cost = 1
+		x = -1
+		y = 1
+	}
+	
+	focus = {
+		id = AST_syndicalist_democracy_within_a_democracy
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_commitments_to_the_trade_councils }
+		relative_position_id = AST_syndicalist_commitments_to_the_trade_councils
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_the_syndicalist_ascension
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_democracy_within_a_democracy }
+		relative_position_id = AST_syndicalist_democracy_within_a_democracy
+		cost = 1
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_larger_than_life
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_house_the_international_workers_association }
+		relative_position_id = AST_syndicalist_house_the_international_workers_association
+		cost = 1
+		x = 3
+		y = 1
+	}
+	
+	focus = {
+		id = AST_syndicalist_extend_chairman_term_limits
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_larger_than_life }
+		relative_position_id = AST_syndicalist_larger_than_life
+		cost = 1
+		x = -1
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_fighting_for_you
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_larger_than_life }
+		relative_position_id = AST_syndicalist_larger_than_life
+		cost = 1
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_a_vision_secured
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_fighting_for_you }
+		prerequisite = { focus = AST_syndicalist_extend_chairman_term_limits }
+		relative_position_id = AST_syndicalist_larger_than_life
+		cost = 1
+		x = 0 
+		y = 2
+	}
+
+	focus = {
+		id = AST_syndicalist_the_labour_competition_debate
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_big_jims_vision }
+		relative_position_id = AST_syndicalist_big_jims_vision
+		cost = 1
+		x = -6
+		y = 2
+	}
+
+	focus = {
+		id = AST_syndicalist_turning_a_blind_eye
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_the_labour_competition_debate }
+		relative_position_id = AST_syndicalist_the_labour_competition_debate
+		mutually_exclusive = { focus = AST_syndicalist_the_insidious_rot }
+		cost = 1
+		x = -1
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_slow_down_on_immigration
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_turning_a_blind_eye }
+		relative_position_id = AST_syndicalist_turning_a_blind_eye
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_immigration_quotas
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_slow_down_on_immigration }
+		relative_position_id = AST_syndicalist_slow_down_on_immigration
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_the_insidious_rot
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_the_labour_competition_debate }
+		relative_position_id = AST_syndicalist_the_labour_competition_debate
+		cost = 1
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_assauge_union_fears
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_the_insidious_rot }
+		relative_position_id = AST_syndicalist_the_insidious_rot
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_courage_let_us_all_combine
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_assauge_union_fears }
+		relative_position_id = AST_syndicalist_assauge_union_fears
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_bull_in_a_china_shop
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_big_jims_vision }
+		relative_position_id = AST_syndicalist_big_jims_vision
+		cost = 1
+		x = 5
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_support_the_growing_urban_class
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_bull_in_a_china_shop }
+		relative_position_id = AST_syndicalist_bull_in_a_china_shop
+		cost = 1
+		x = -1
+		y = 1
+	}
+	
+	focus = {
+		id = AST_syndicalist_send_food_not_weapons
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_bull_in_a_china_shop }
+		relative_position_id = AST_syndicalist_bull_in_a_china_shop
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_syndicalist_downplay_the_black_armada_boycott
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_syndicalist_bull_in_a_china_shop }
+		relative_position_id = AST_syndicalist_bull_in_a_china_shop
+		cost = 1
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_labor_not_dead_yet
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_starter_fifty_years_of_federation }
+		relative_position_id = AST_starter_fifty_years_of_federation
+		cost = 1
+		x = -25
+		y = 2
+	}
+
+	focus = {
+		id = AST_labor_legacy_of_white_australia
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_not_dead_yet }
+		relative_position_id = AST_labor_not_dead_yet
+		cost = 1
+		x = 2
+		y = 1
+	}
+
+	focus = {
+		id = AST_labor_tighten_border_controls
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_legacy_of_white_australia }
+		relative_position_id = AST_labor_legacy_of_white_australia
+		cost = 1
+		x = -1
+		y = 1
+	}
+
+	focus = {
+		id = AST_labor_introduce_literacy_tests
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_tighten_border_controls }
+		relative_position_id = AST_labor_tighten_border_controls
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_labor_the_economic_protections_act
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_introduce_literacy_tests }
+		relative_position_id = AST_labor_introduce_literacy_tests
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_labor_crack_down_on_border_discrimination
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_legacy_of_white_australia }
+		relative_position_id = AST_labor_legacy_of_white_australia
+		mutually_exclusive = { focus = AST_labor_tighten_border_controls }
+		cost = 1
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_labor_establish_the_customs_watchdog
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_crack_down_on_border_discrimination }
+		relative_position_id = AST_labor_crack_down_on_border_discrimination
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_labor_slow_but_steady_progress
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_establish_the_customs_watchdog }
+		relative_position_id = AST_labor_establish_the_customs_watchdog
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_labor_light_on_the_hill
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_not_dead_yet }
+		relative_position_id = AST_labor_not_dead_yet
+		cost = 1
+		x = -7
+		y = 1
+	}
+
+	focus = {
+		id = AST_labor_liberty_through_socialism
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_light_on_the_hill }
+		relative_position_id = AST_labor_light_on_the_hill
+		cost = 1
+		x = -3
+		y = 1
+	}
+
+	focus = {
+		id = AST_labor_liberalise_the_media
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_liberty_through_socialism }
+		relative_position_id = AST_labor_liberty_through_socialism
+		cost = 1
+		y = 1
+		x = 1
+	}
+
+	focus = {
+		id = AST_labor_deemphasise_ideological_purity
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_liberalise_the_media }
+		relative_position_id = AST_labor_liberalise_the_media
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_labor_matters_of_religion
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_liberty_through_socialism }
+		relative_position_id = AST_labor_liberty_through_socialism
+		cost = 1
+		y = 1
+		x = -4
+	}
+
+	focus = {
+		id = AST_labor_ease_up_on_the_anglican_church
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_matters_of_religion }
+		relative_position_id = AST_labor_matters_of_religion
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_labor_concordat_with_the_archbishop
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_ease_up_on_the_anglican_church }
+		relative_position_id = AST_labor_ease_up_on_the_anglican_church
+		cost = 1
+		y = 1
+		x = -1
+	}
+
+	focus = {
+		id = AST_labor_emphasise_australasian_anglicanism
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_ease_up_on_the_anglican_church }
+		relative_position_id = AST_labor_ease_up_on_the_anglican_church
+		cost = 1
+		y = 1
+		x = 1
+	}
+
+	focus = {
+		id = AST_labor_islamic_outreach
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_matters_of_religion }
+		relative_position_id = AST_labor_matters_of_religion
+		cost = 1
+		y = 1
+		x = 2.5
+	}
+
+	focus = {
+		id = AST_labor_enshrine_religious_pluralism
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_islamic_outreach }
+		relative_position_id = AST_labor_islamic_outreach
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_labor_the_catholic_influx
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_matters_of_religion }
+		relative_position_id = AST_labor_matters_of_religion
+		cost = 1
+		y = 1
+		x = -2.5
+	}
+
+	focus = {
+		id = AST_labor_a_charitable_church
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_the_catholic_influx }
+		relative_position_id = AST_labor_the_catholic_influx
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_labor_economic_decentralisation
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_light_on_the_hill }
+		relative_position_id = AST_labor_light_on_the_hill
+		cost = 1
+		y = 1
+		x = 3
+	}
+
+	focus = {
+		id = AST_labor_market_socialism
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_economic_decentralisation }
+		relative_position_id = AST_labor_economic_decentralisation
+		cost = 1
+		y = 1
+		x = -1.5
+	}
+
+	focus = {
+		id = AST_labor_small_private_enterprise
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_market_socialism }
+		relative_position_id = AST_labor_market_socialism
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_labor_national_heavy_industry
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_small_private_enterprise }
+		relative_position_id = AST_labor_small_private_enterprise
+		cost = 1
+		y = 1
+		x = -1
+	}
+
+	focus = {
+		id = AST_labor_autonomy_for_non_essential_industry
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_small_private_enterprise }
+		relative_position_id = AST_labor_small_private_enterprise
+		cost = 1
+		y = 1
+		x = 1
+	}
+
+	focus = {
+		id = AST_labor_socialism_with_australasian_characteristics
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_autonomy_for_non_essential_industry }
+		prerequisite = { focus = AST_labor_national_heavy_industry }
+		relative_position_id = AST_labor_small_private_enterprise
+		cost = 1
+		y = 2
+	}
+
+	focus = {
+		id = AST_labor_pause_rural_collectivisation
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_economic_decentralisation }
+		relative_position_id = AST_labor_economic_decentralisation
+		cost = 1
+		y = 1
+		x = 2
+	}
+
+	focus = {
+		id = AST_labor_grain_quotas_for_autonomy
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_pause_rural_collectivisation }
+		relative_position_id = AST_labor_pause_rural_collectivisation
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_labor_maintain_government_oversight
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_grain_quotas_for_autonomy }
+		relative_position_id = AST_labor_grain_quotas_for_autonomy
+		cost = 1
+		y = 1
+		x = -1
+	}
+
+	focus = {
+		id = AST_labor_special_agricultural_zones
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_grain_quotas_for_autonomy }
+		relative_position_id = AST_labor_grain_quotas_for_autonomy
+		cost = 1
+		y = 1
+		x = 1
+	}
+
+	focus = {
+		id = AST_labor_reforming_the_quorum
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_light_on_the_hill }
+		relative_position_id = AST_labor_light_on_the_hill
+		cost = 1
+		x = -15
+		y = 1
+	}
+
+	focus = {
+		id = AST_labor_prioritise_australian_and_new_zealanders
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_reforming_the_quorum }
+		relative_position_id = AST_labor_reforming_the_quorum
+		cost = 1
+		x = -1
+		y = 1
+	}
+
+	focus = {
+		id = AST_labor_increase_autonomy_for_junior_partners
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_prioritise_australian_and_new_zealanders }
+		relative_position_id = AST_labor_prioritise_australian_and_new_zealanders
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_labor_expanding_the_definition_of_socialist
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_reforming_the_quorum }
+		relative_position_id = AST_labor_reforming_the_quorum
+		cost = 1
+		x = 1
+		y = 2
+	}
+
+	focus = {
+		id = AST_labor_permit_regionalist_parties
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_expanding_the_definition_of_socialist }
+		relative_position_id = AST_labor_expanding_the_definition_of_socialist
+		cost = 1
+		y = 1
+		x = -1
+	}
+
+	focus = {
+		id = AST_labor_permit_agrarian_parties
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_expanding_the_definition_of_socialist }
+		relative_position_id = AST_labor_expanding_the_definition_of_socialist
+		cost = 1
+		y = 1
+		x = 1
+	}
+
+	focus = {
+		id = AST_labor_retain_the_bicameral_system
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_permit_agrarian_parties }
+		prerequisite = { focus = AST_labor_permit_regionalist_parties }
+		relative_position_id = AST_labor_permit_regionalist_parties
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_labor_put_labor_on_the_council
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_retain_the_bicameral_system }
+		relative_position_id = AST_labor_retain_the_bicameral_system
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_labor_secondary_role_of_the_minor_parties
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_retain_the_bicameral_system }
+		relative_position_id = AST_labor_retain_the_bicameral_system
+		cost = 1
+		y = 1
+		x = -1.5
+	}
+
+	focus = {
+		id = AST_labor_do_away_with_the_council
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_permit_agrarian_parties }
+		prerequisite = { focus = AST_labor_permit_regionalist_parties }
+		relative_position_id = AST_labor_permit_agrarian_parties
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_labor_allow_non_capitalist_parties
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_do_away_with_the_council }
+		relative_position_id = AST_labor_do_away_with_the_council
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_labor_break_patersons_monopoly_on_power
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_do_away_with_the_council}
+		relative_position_id = AST_labor_do_away_with_the_council
+		cost = 1
+		y = 1
+		x = 1.5
+	}
+
+	focus = {
+		id = AST_labor_the_indonesian_anchor
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_not_dead_yet }
+		relative_position_id = AST_labor_not_dead_yet
+		cost = 1
+		y = 1
+		x = 7
+	}
+
+	focus = {
+		id = AST_labor_scale_back_occupation_forces
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_the_indonesian_anchor }
+		relative_position_id = AST_labor_the_indonesian_anchor
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_labor_increase_oceanic_trade
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_the_indonesian_anchor }
+		relative_position_id = AST_labor_the_indonesian_anchor
+		cost = 1
+		y = 1
+		x = -1
+		}
+			
+	focus = {
+		id = AST_labor_lean_on_the_collaborators
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_the_indonesian_anchor }
+		relative_position_id = AST_labor_the_indonesian_anchor
+		cost = 1
+		y = 1
+		x = 1
+	}
+	
+	focus = {
+		id = AST_liberal_speak_out_against_the_establishment
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_labor_allow_non_capitalist_parties }
+		prerequisite = { focus = AST_labor_break_patersons_monopoly_on_power }
+		relative_position_id = AST_labor_break_patersons_monopoly_on_power
+		cost = 1
+		x = -1
+		y = 1.5
+	}
+
+	focus = {
+		id = AST_liberal_organise_the_anti_government_bloc
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_liberal_speak_out_against_the_establishment }
+		relative_position_id = AST_liberal_speak_out_against_the_establishment
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_liberal_vote_of_no_confidence
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_liberal_organise_the_anti_government_bloc }
+		relative_position_id = AST_liberal_organise_the_anti_government_bloc
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_liberal_military_seizes_power
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_liberal_vote_of_no_confidence }
+		relative_position_id = AST_liberal_vote_of_no_confidence
+		cost = 1
+		y = 1
+		x = -2.5
+	}
+	
+	focus = {
+		id = AST_liberal_purge_anti_socialist_elements
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_liberal_military_seizes_power }
+		relative_position_id = AST_liberal_military_seizes_power
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_liberal_arrest_evatt
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_liberal_purge_anti_socialist_elements }
+		relative_position_id = AST_liberal_purge_anti_socialist_elements
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_liberal_restore_the_quorum
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_liberal_arrest_evatt }
+		relative_position_id = AST_liberal_arrest_evatt
+		cost = 1
+		y = 1
+		x = -1
+	}
+
+	focus = {
+		id = AST_liberal_government_of_national_security
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_liberal_arrest_evatt }
+		relative_position_id = AST_liberal_arrest_evatt
+		mutually_exclusive = { focus = AST_liberal_restore_the_quorum }
+		cost = 1
+		y = 1
+		x = 1
+	}
+
+	focus = {
+		id = AST_liberal_labor_holds_on
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_liberal_vote_of_no_confidence }
+		relative_position_id = AST_liberal_vote_of_no_confidence
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_liberal_prosecute_the_counter_revolutionaries
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_liberal_labor_holds_on }
+		relative_position_id = AST_liberal_labor_holds_on
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_liberal_reassure_the_establishment
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_liberal_prosecute_the_counter_revolutionaries }
+		relative_position_id = AST_liberal_prosecute_the_counter_revolutionaries
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_liberal_end_of_the_socialist_order
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_liberal_vote_of_no_confidence }
+		relative_position_id = AST_liberal_vote_of_no_confidence
+		cost = 1
+		y = 1
+		x = 2.5
+	}
+
+	focus = {
+		id = AST_liberal_dissolve_the_quorum
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_liberal_end_of_the_socialist_order }
+		relative_position_id = AST_liberal_end_of_the_socialist_order
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_liberal_the_australasian_referendum
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_liberal_dissolve_the_quorum }
+		relative_position_id = AST_liberal_dissolve_the_quorum
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_liberal_an_amicable_divorce
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_liberal_the_australasian_referendum }
+		relative_position_id = AST_liberal_the_australasian_referendum
+		cost = 1
+		y = 1
+		x = -1
+	}
+
+	focus = {
+		id = AST_liberal_a_union_preserved
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_liberal_the_australasian_referendum }
+		relative_position_id = AST_liberal_the_australasian_referendum
+		cost = 1
+		y = 1
+		x = 1
+	}
+
+	focus = {
+		id = AST_liberal_the_grand_democratic_coalition
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_liberal_end_of_the_socialist_order }
+		relative_position_id = AST_liberal_end_of_the_socialist_order
+		cost = 1
+		y = 1
+		x = 2.5
+	}
+
+	focus = {
+		id = AST_liberal_the_first_menzies_cabinet
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_liberal_the_grand_democratic_coalition }
+		relative_position_id = AST_liberal_the_grand_democratic_coalition
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_military_the_military_spending_crisis
+		icon = GFX_goal_generic_small_arms
+		cost = 1
+		y = 15
+	}
+
+	focus = {
+		id = AST_military_shrink_the_defence_budget
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_military_the_military_spending_crisis }
+		relative_position_id = AST_military_the_military_spending_crisis
+		cost = 1
+		y = 1
+		x = -1.5
+	}
+
+	focus = {
+		id = AST_military_swords_to_ploughshares_initiative
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_military_shrink_the_defence_budget }
+		relative_position_id = AST_military_shrink_the_defence_budget
+		cost = 1
+		y = 1
+	}
+
+	focus = {
+		id = AST_military_maintain_current_spending
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_military_the_military_spending_crisis }
+		relative_position_id = AST_military_the_military_spending_crisis
+		cost = 1
+		y = 1
+		x = 1
+	}
+
+	focus = {
+		id = AST_military_the_best_defence
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_military_maintain_current_spending }
+		relative_position_id = AST_military_maintain_current_spending
+		cost = 1
+		y = 1
+	}
+}
+
