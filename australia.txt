@@ -26,8 +26,6 @@ continuous_focus_position = { x = 50 y = 1000 }
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = AST_starter_fifty_years_of_federation }
 		relative_position_id = AST_starter_fifty_years_of_federation
-		mutually_exclusive = { focus = AST_syndicalist_big_jims_vision }
-		mutually_exclusive = { focus = AST_labor_not_dead_yet }
 		cost = 1
 		x = 0
 		y = 2
@@ -59,7 +57,7 @@ continuous_focus_position = { x = 50 y = 1000 }
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = AST_communist_split_split_in_the_party }
 		relative_position_id = AST_communist_split_split_in_the_party
-		mutually_exclusive = AST_communist_split_question_patersons_mandate
+		mutually_exclusive = { focus = AST_communist_split_question_patersons_mandate }
 		cost = 1
 		x = -1.5
 		y = 1.5
@@ -115,7 +113,7 @@ continuous_focus_position = { x = 50 y = 1000 }
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = AST_communist_split_debate_boils_over }
 		relative_position_id = AST_communist_split_debate_boils_over
-		mutually_exclusive = AST_communist_split_establishing_the_party_state
+		mutually_exclusive = { focus = AST_communist_split_establishing_the_party_state }
 		cost = 1
 		x = -1.5
 		y = 1
@@ -288,7 +286,7 @@ continuous_focus_position = { x = 50 y = 1000 }
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = AST_eco_revisit_industrial_agreements }
 		relative_position_id = AST_eco_revisit_industrial_agreements
-		mutually_exclusive = AST_eco_continue_total_nationalisation
+		mutually_exclusive = { focus = AST_eco_continue_total_nationalisation }
 		cost = 1
 		x = 1.5
 		y = 1
@@ -329,6 +327,7 @@ continuous_focus_position = { x = 50 y = 1000 }
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = AST_eco_office_of_agricultural_affairs }
 		relative_position_id = AST_eco_office_of_agricultural_affairs
+		mutually_exclusive = { focus = AST_eco_collectivisation_successful }
 		cost = 1
 		x = -2
 		y = 1
@@ -370,6 +369,7 @@ continuous_focus_position = { x = 50 y = 1000 }
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = AST_eco_collectivisation_stalled }
 		relative_position_id = AST_eco_collectivisation_stalled
+		mutually_exclusive = { focus = AST_eco_outstretch_the_hand }
 		cost = 1
 		x = 1.5
 		y = 1
@@ -784,6 +784,7 @@ continuous_focus_position = { x = 50 y = 1000 }
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = AST_syndicalist_accelerate_social_ownership_of_industry }
 		relative_position_id = AST_syndicalist_accelerate_social_ownership_of_industry
+		mutually_exclusive = { focus = AST_syndicalist_unite_the_unions }
 		cost = 1
 		x = -1
 		y = 1
@@ -982,6 +983,7 @@ continuous_focus_position = { x = 50 y = 1000 }
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = AST_syndicalist_the_labour_competition_debate }
 		relative_position_id = AST_syndicalist_the_labour_competition_debate
+		mutually_exclusive = { focus = AST_syndicalist_turning_a_blind_eye }
 		cost = 1
 		x = 1
 		y = 1
@@ -1069,6 +1071,7 @@ continuous_focus_position = { x = 50 y = 1000 }
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = AST_labor_legacy_of_white_australia }
 		relative_position_id = AST_labor_legacy_of_white_australia
+		mutually_exclusive = { focus = AST_labor_crack_down_on_border_discrimination }
 		cost = 1
 		x = -1
 		y = 1
@@ -1525,6 +1528,10 @@ continuous_focus_position = { x = 50 y = 1000 }
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = AST_liberal_vote_of_no_confidence }
 		relative_position_id = AST_liberal_vote_of_no_confidence
+		mutually_exclusive = { 
+			focus = AST_liberal_labor_holds_on
+			focus = AST_liberal_end_of_the_socialist_order
+			}
 		cost = 1
 		y = 1
 		x = -2.5
@@ -1553,6 +1560,7 @@ continuous_focus_position = { x = 50 y = 1000 }
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = AST_liberal_arrest_evatt }
 		relative_position_id = AST_liberal_arrest_evatt
+		mutually_exclusive = { focus = AST_liberal_government_of_national_security }
 		cost = 1
 		y = 1
 		x = -1
@@ -1574,6 +1582,10 @@ continuous_focus_position = { x = 50 y = 1000 }
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = AST_liberal_vote_of_no_confidence }
 		relative_position_id = AST_liberal_vote_of_no_confidence
+		mutually_exclusive = {
+			focus = AST_liberal_military_seizes_power
+			focus = AST_liberal_end_of_the_socialist_order
+		}
 		cost = 1
 		y = 1
 	}
@@ -1601,6 +1613,10 @@ continuous_focus_position = { x = 50 y = 1000 }
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = AST_liberal_vote_of_no_confidence }
 		relative_position_id = AST_liberal_vote_of_no_confidence
+		mutually_exclusive = {
+			focus = AST_liberal_military_seizes_power
+			focus = AST_liberal_labor_holds_on
+		}
 		cost = 1
 		y = 1
 		x = 2.5
